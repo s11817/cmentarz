@@ -2,11 +2,11 @@ package repositories;
 import java.util.*;
 import Domain.*;
 
-public interface IPersonRepository extends IRepository<TEntity> {
+public interface IPersonRepository extends IRepository {
 	
 	
 	
 
-	public List<user>
+	
 
 }

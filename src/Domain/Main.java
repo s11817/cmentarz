@@ -1,6 +1,8 @@
 package Domain;
 import javax.swing.JOptionPane;
 
+import repositories.impl.DummyDb;
+
 
 public class Main {
 
@@ -14,6 +16,7 @@ public class Main {
 		
 		
 		
+		DummyDb db = new DummyDb();
 		
 		
 		System.out.println("i jeszcze raz w drug�strone");
