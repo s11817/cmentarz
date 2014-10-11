@@ -1,11 +1,15 @@
+package Domain;
 
-public class Accommodation extends Person {
+public class Accommodation extends Person  {
 	
 	char sector;
 	int nrOfGrave;
 	
-	Person person;
+	private Person person;
+	//private Fees fees;
 
+	
+	
 	
 	
 	public char getSector() {

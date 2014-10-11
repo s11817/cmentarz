@@ -1,7 +1,8 @@
+package Domain;
 import java.util.Date;
 
 
-public class Person {
+public class Person extends Entity{
 
 	String name;
 	String Surname;
@@ -10,8 +11,11 @@ public class Person {
 	
 	
 	
+
+	Accommodation accommodation;
 	
 	
+
 	public String getName() {
 		return name;
 	}

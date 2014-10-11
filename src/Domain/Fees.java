@@ -1,10 +1,13 @@
+package Domain;
 
-public class Fees {
+public class Fees extends Entity{
 
 	
 	int yearFee = 1000;
 	int funeral = 3500;
 	int costOfFreezer = 120;
+	
+	
 	
 	
 	public int getYearFee() {
