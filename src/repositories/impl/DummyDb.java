@@ -9,8 +9,18 @@ public class DummyDb {
 	
 	public List<Person> persons;
 	public List<Fees> feeses;
-	public DummyDb db;
 	
+	
+	
+
+	public DummyDb()
+	{
+		persons = new ArrayList<Person>();
+		feeses = new ArrayList<Fees>();
+		
+		
+		
+	}
 	
 
 }

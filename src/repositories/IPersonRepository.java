@@ -2,7 +2,9 @@ package repositories;
 import java.util.*;
 import Domain.*;
 
-public interface IPersonRepository extends IRepository {
+public interface IPersonRepository extends IRepository<Person> {
+	
+	
 	
 	
 	

@@ -1,7 +1,13 @@
-package Domain;
+
 import javax.swing.JOptionPane;
 
 import repositories.impl.DummyDb;
+
+import java.util.List;
+import Domain.Person;
+import repositories.*;
+
+
 
 
 public class Main {
@@ -16,7 +22,9 @@ public class Main {
 		
 		
 		
-		DummyDb db = new DummyDb();
+		IRepositoryCatalog catalog = new DummyRepositoryCatalog();
+		List<User> admins = catalog.getUsers().withRole("administrator");
+		catalog.getUsers().add(new User());
 		
 		
 		System.out.println("i jeszcze raz w drug�strone");

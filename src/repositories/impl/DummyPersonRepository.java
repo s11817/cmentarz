@@ -42,16 +42,16 @@ public class DummyPersonRepository implements IRepository<Person> {
 		for(Person p : db.persons)
 		{
 			if(p.getId()==id)
-			{
+				return p;
 				
-			}
+			
 		}
 		return null;
 	}
 
 	public List<Person> getAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return db.persons;
 	}
 
 }
