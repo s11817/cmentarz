@@ -54,4 +54,13 @@ public class DummyPersonRepository implements IRepository<Person> {
 		return db.persons;
 	}
 
+
+
+
+
+	public String getPerson(Person osoba1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

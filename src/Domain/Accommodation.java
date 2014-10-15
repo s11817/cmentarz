@@ -2,8 +2,11 @@ package Domain;
 
 public class Accommodation extends Person  {
 	
-	char sector;
+	String sector;
 	int nrOfGrave;
+	int sinceWhen;
+	int forWhen;
+	
 	
 	private Person person;
 	//private Fees fees;
@@ -12,12 +15,28 @@ public class Accommodation extends Person  {
 	
 	
 	
-	public char getSector() {
+	public String getSector() {
 		return sector;
 	}
 
-	public void setSector(char sector) {
-		this.sector = sector;
+	public int getSinceWhen() {
+		return sinceWhen;
+	}
+
+	public void setSinceWhen(int sinceWhen) {
+		this.sinceWhen = sinceWhen;
+	}
+
+	public int getForWhen() {
+		return forWhen;
+	}
+
+	public void setForWhen(int forWhen) {
+		this.forWhen = forWhen;
+	}
+
+	public void setSector(String string) {
+		this.sector = string;
 	}
 
 	public int getNrOfGrave() {

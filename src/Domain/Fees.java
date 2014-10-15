@@ -1,11 +1,11 @@
 package Domain;
 
-public class Fees extends Entity{
+public class Fees {
 
 	
 	int yearFee = 1000;
 	int funeral = 3500;
-	int costOfFreezer = 120;
+	
 	
 	
 	
@@ -16,9 +16,7 @@ public class Fees extends Entity{
 	public int getFuneral() {
 		return funeral;
 	}
-	public int getCostOfFreezer() {
-		return costOfFreezer;
-	}
+	
 	
 	
 	

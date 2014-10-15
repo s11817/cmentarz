@@ -6,8 +6,10 @@ public class Person extends Entity{
 
 	String name;
 	String Surname;
-	Date dateOfDeath;
-	int contactNumberToFamily;
+	int yearOfDeath;
+	int monthOfDeath;
+	int dayOfDeath;
+	
 	
 	
 	
@@ -28,18 +30,16 @@ public class Person extends Entity{
 	public void setSurname(String surname) {
 		Surname = surname;
 	}
-	public Date getDateOfDeath() {
-		return dateOfDeath;
+	public void getDateOfDeath() {
+		System.out.println(yearOfDeath+"-"+monthOfDeath+"-"+dayOfDeath);
+		return;
 	}
-	public void setDateOfDeath(Date dateOfDeath) {
-		this.dateOfDeath = dateOfDeath;
+	public void setDateOfDeath(int year, int month, int day) {
+		this.yearOfDeath = year;
+		this.monthOfDeath = month;
+		this.dayOfDeath = day;
 	}
-	public int getContactNumberToFamily() {
-		return contactNumberToFamily;
-	}
-	public void setContactNumberToFamily(int contactNumberToFamily) {
-		this.contactNumberToFamily = contactNumberToFamily;
-	}
+	
 	
 	
 	
