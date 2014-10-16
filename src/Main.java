@@ -1,19 +1,15 @@
 
 import javax.swing.JOptionPane;
+import java.util.List;
+import java.util.jar.Attributes.Name;   //nieuzywane
 
 import repositories.impl.DummyDb;
-import repositories.impl.DummyGuardianOfTheTombRepository;
 import repositories.impl.DummyRepositoryCatalog;
 
-import java.util.List;
-import java.util.jar.Attributes.Name;
 
-import Domain.Accommodation;
-import Domain.Fees;
-import Domain.GuardianOfTheTomb;
-import Domain.Person;
+
+import Domain.*;
 import repositories.*;
-
 
 
 
@@ -21,17 +17,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//String name = JOptionPane.showInputDialog("Podaj swoje imieee");
+		//String name = JOptionPane.showInputDialog("Podaj swoje imieee"); //male proby okienek
 		//JOptionPane.showMessageDialog(null, "Dziï¿½ki " + name);
 		//System.out.println("name to" + name);
 		//int liczba = Integer.parseInt(name);
 		//System.out.println("i mala zmiankasssss");
-		
-		
-		
-		//IRepositoryCatalog catalog = new DummyRepositoryCatalog();
-		//catalog.getPersons().add(new Person());
-		
+
+
 		
 		Person osoba1 = new Person();
 		osoba1.setId(1);
@@ -64,7 +56,6 @@ public class Main {
 		IRepositoryCatalog catalog = new DummyRepositoryCatalog();
 		catalog.getPersons().add(osoba1);
 		catalog.getPersons().add(osoba2);
-		//catalog.getPersons().add(a1);
 		catalog.getGuardianOfTheTomb().add(opiekun1);
 		catalog.getAccommodation().add(a1);
 	
@@ -80,14 +71,7 @@ public class Main {
 		System.out.println("Opiekun nr "/*+ db.guardians  */+" "+ db.persons); //proba wyswietlenia listy, jak to zrobiæ?
 		System.out.println("Opiekun nr  "+ catalog.getPersons().getAll()); //proba wyswietlenia listy
 		
-		
-		
-		
-		
-		
-		
-		
-		System.out.println("i jeszcze raz w drugï¿½strone");
+
 		
 	}
 
