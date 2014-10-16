@@ -1,6 +1,6 @@
 package Domain;
 
-public class GuardianOfTheTomb {
+public class GuardianOfTheTomb extends Entity {
 	
 	
 	String nameOfGuardian;
@@ -8,7 +8,7 @@ public class GuardianOfTheTomb {
 	int nrTelOfGuardian;
 	
 	Person person = new Person();
-	
+	//Person person;
 	
 
 	public String getNameOfGuardian() {

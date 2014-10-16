@@ -2,9 +2,11 @@
 import javax.swing.JOptionPane;
 
 import repositories.impl.DummyDb;
+import repositories.impl.DummyGuardianOfTheTombRepository;
 import repositories.impl.DummyRepositoryCatalog;
 
 import java.util.List;
+import java.util.jar.Attributes.Name;
 
 import Domain.Accommodation;
 import Domain.Fees;
@@ -37,7 +39,16 @@ public class Main {
 		osoba1.setSurname("Droga");
 		osoba1.setDateOfDeath(2003,12,2);
 		
+		Person osoba2 = new Person();
+		osoba2.setId(2);
+		osoba2.setName("Roman");
+		osoba2.setSurname("Kidler");
+		osoba2.setDateOfDeath(2002,2,25);
+		
+		
+		
 		GuardianOfTheTomb opiekun1 = new GuardianOfTheTomb();
+		opiekun1.setId(1);
 		opiekun1.setNameOfGuardian("Roza");
 		opiekun1.setSurnameOfGuardian("Droga");
 		opiekun1.setNrTelOfGuardian(500600800);
@@ -52,13 +63,22 @@ public class Main {
 		
 		IRepositoryCatalog catalog = new DummyRepositoryCatalog();
 		catalog.getPersons().add(osoba1);
+		catalog.getPersons().add(osoba2);
+		//catalog.getPersons().add(a1);
+		catalog.getGuardianOfTheTomb().add(opiekun1);
+		catalog.getAccommodation().add(a1);
 	
-
+		DummyDb db = new DummyDb();  //proba wyswietlenia listy
+		
+		db.persons.add(osoba1); //proba wyswietlenia listy
+		db.persons.add(osoba2); //proba wyswietlenia listy
 		
 		
+		System.out.println("Osoba nr "+catalog.getPersons().get(1).getId()+" "+catalog.getPersons().get(1).getName()+" bla bla bla");
 		
-		System.out.println("Osoba nr "+catalog.getPersons().getPerson(osoba1)+" "+osoba1.getName());
 		
+		System.out.println("Opiekun nr "/*+ db.guardians  */+" "+ db.persons); //proba wyswietlenia listy, jak to zrobiæ?
+		System.out.println("Opiekun nr  "+ catalog.getPersons().getAll()); //proba wyswietlenia listy
 		
 		
 		

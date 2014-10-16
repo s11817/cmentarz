@@ -10,9 +10,15 @@ public class Accommodation extends Person  {
 	
 	private Person person;
 	//private Fees fees;
-
+/*public Accommodation() {
+	setPerson(person);
+	nrOfGrave = 1;
+	sector = "A";
+	sinceWhen = 2003;
+	forWhen = 2015;
+	setId(1);
 	
-	
+	}*/
 	
 	
 	public String getSector() {

@@ -3,6 +3,7 @@ package repositories;
 import java.util.List;
 
 import Domain.Person;
+import Domain.*;
 
 public interface IRepository<TEntity> {
 	
@@ -11,7 +12,7 @@ public interface IRepository<TEntity> {
 	public void delete(TEntity entity);
 	public TEntity get(int id);
 	public List<TEntity> getAll();
-	public String getPerson(Person osoba1);
+
 	
 
 }

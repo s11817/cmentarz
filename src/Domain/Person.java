@@ -1,5 +1,5 @@
 package Domain;
-import java.util.Date;
+//import java.util.Date;   //nie uzywane
 
 
 public class Person extends Entity{
