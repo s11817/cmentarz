@@ -69,7 +69,7 @@ public class Main {
 		
 		
 		System.out.println("Opiekun nr "/*+ db.guardians  */+" "+ db.persons); //proba wyswietlenia listy, jak to zrobiæ?
-		System.out.println("Opiekun nr  "+ catalog.getPersons().getAll()); //proba wyswietlenia listy
+		 for (Person p: catalog.getPersons().getAll()) { System.out.println (p.getName());}//proba wyswietlenia listy
 		
 
 		
