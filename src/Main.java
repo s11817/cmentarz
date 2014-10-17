@@ -72,7 +72,7 @@ public class Main {
 		 for (Person p: catalog.getPersons().getAll()) { System.out.println (p.getName());}//proba wyswietlenia listy
 		
 		
-		//dodanie na git i proba odbioru w eclipse
+		//dodanie na git i proba odbioru w eclipseeeeeeee
 
 		
 	}
