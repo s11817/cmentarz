@@ -18,7 +18,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//String name = JOptionPane.showInputDialog("Podaj swoje imieee"); //male proby okienek
-		//JOptionPane.showMessageDialog(null, "Dzi�ki " + name);
+		//JOptionPane.showMessageDialog(null, "Dziï¿½ki " + name);
 		//System.out.println("name to" + name);
 		//int liczba = Integer.parseInt(name);
 		//System.out.println("i mala zmiankasssss");
@@ -68,9 +68,11 @@ public class Main {
 		System.out.println("Osoba nr "+catalog.getPersons().get(1).getId()+" "+catalog.getPersons().get(1).getName()+" bla bla bla");
 		
 		
-		System.out.println("Opiekun nr "/*+ db.guardians  */+" "+ db.persons); //proba wyswietlenia listy, jak to zrobi�?
+		System.out.println("Opiekun nr "/*+ db.guardians  */+" "+ db.persons); //proba wyswietlenia listy, jak to zrobiæ?
 		 for (Person p: catalog.getPersons().getAll()) { System.out.println (p.getName());}//proba wyswietlenia listy
 		
+		
+		//dodanie na git i proba odbioru w eclipse
 
 		
 	}
