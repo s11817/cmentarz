@@ -5,7 +5,7 @@ import java.util.List;
 import Domain.Person;
 import Domain.*;
 
-public interface IRepository<TEntity> {
+public interface IRepository<TEntity extends Entity> {
 	
 	public void add(TEntity entity);
 	public void update(TEntity entity);

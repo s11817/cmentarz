@@ -16,22 +16,21 @@ private DummyDb db = new DummyDb();
 
 public IRepository<Person> getPersons() {
 	
-	
-return new DummyPersonRepository(db);
-
+	return new DummyPersonRepository(db);
 
 }
 
 
 
 public IRepository<GuardianOfTheTomb> getGuardianOfTheTomb() {
-	// TODO Auto-generated method stub
+
 	return new DummyGuardianOfTheTombRepository(db);
 }
 
 
+
 public IRepository<Accommodation> getAccommodation() {
-	// TODO Auto-generated method stub
+	
 	return new DummyAccommodationRepository(db);
 }
 

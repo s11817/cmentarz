@@ -23,20 +23,21 @@ public class Main {
 		//int liczba = Integer.parseInt(name);
 		//System.out.println("i mala zmiankasssss");
 
-
+		IRepositoryCatalog catalog = new DummyRepositoryCatalog();
 		
 		Person osoba1 = new Person();
 		osoba1.setId(1);
 		osoba1.setName("Zbigniew");
 		osoba1.setSurname("Droga");
 		osoba1.setDateOfDeath(2003,12,2);
+		catalog.getPersons().add(osoba1);
 		
 		Person osoba2 = new Person();
 		osoba2.setId(2);
 		osoba2.setName("Roman");
 		osoba2.setSurname("Kidler");
 		osoba2.setDateOfDeath(2002,2,25);
-		
+		catalog.getPersons().add(osoba2);
 		
 		
 		GuardianOfTheTomb opiekun1 = new GuardianOfTheTomb();
@@ -45,30 +46,28 @@ public class Main {
 		opiekun1.setSurnameOfGuardian("Droga");
 		opiekun1.setNrTelOfGuardian(500600800);
 		opiekun1.setPerson(osoba1);
+		catalog.getGuardianOfTheTomb().add(opiekun1);
 		
 		Accommodation a1 = new Accommodation();
-		a1.setPerson(osoba1);
 		a1.setNrOfGrave(1);
 		a1.setSector("A");
 		a1.setSinceWhen(2003);
 		a1.setForWhen(2015);
-		
-		IRepositoryCatalog catalog = new DummyRepositoryCatalog();
-		catalog.getPersons().add(osoba1);
-		catalog.getPersons().add(osoba2);
-		catalog.getGuardianOfTheTomb().add(opiekun1);
+		a1.setPerson(osoba1);
 		catalog.getAccommodation().add(a1);
-	
-		DummyDb db = new DummyDb();  //proba wyswietlenia listy
 		
-		db.persons.add(osoba1); //proba wyswietlenia listy
-		db.persons.add(osoba2); //proba wyswietlenia listy
+		
+	
+		//DummyDb db = new DummyDb();  //proba wyswietlenia listy
+		
+		//db.persons.add(osoba1); //proba wyswietlenia listy
+		//db.persons.add(osoba2); //proba wyswietlenia listy
 		
 		
 		System.out.println("Osoba nr "+catalog.getPersons().get(1).getId()+" "+catalog.getPersons().get(1).getName()+" bla bla bla");
 		
 		
-		System.out.println("Opiekun nr "/*+ db.guardians  */+" "+ db.persons); //proba wyswietlenia listy, jak to zrobiæ?
+		//System.out.println("Opiekun nr "/*+ db.guardians  */+" "+ db.persons); //proba wyswietlenia listy, jak to zrobiæ?
 		 for (Person p: catalog.getPersons().getAll()) { System.out.println (p.getName());}//proba wyswietlenia listy
 		
 		

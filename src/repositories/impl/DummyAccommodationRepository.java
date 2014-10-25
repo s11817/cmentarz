@@ -44,7 +44,7 @@ public class DummyAccommodationRepository implements IRepository<Accommodation> 
 	}
 
 	public List<Accommodation> getAll() {
-		// TODO Auto-generated method stub
+		 
 		return db.accommodations;
 	}
 
