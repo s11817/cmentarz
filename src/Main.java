@@ -35,7 +35,7 @@ public class Main {
 			ResultSet rs = stmt.executeQuery(query);
 			
 			while(rs.next()){
-				System.out.println("Name :"+rs.getString("name"));
+				System.out.println("Imie i nazwisko :"+rs.getString("name")+" "+rs.getString("surName"));
 			}
 		
 		
