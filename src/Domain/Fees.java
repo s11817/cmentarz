@@ -3,13 +3,19 @@ package Domain;
 public class Fees {
 
 	
-	int yearFee = 1000;
-	int funeral = 3500;
+	int yearFee;
+	int funeral;
 	
 	
 	
 	
 	
+	public void setYearFee(int yearFee) {
+		this.yearFee = yearFee;
+	}
+	public void setFuneral(int funeral) {
+		this.funeral = funeral;
+	}
 	public int getYearFee() {
 		return yearFee;
 	}

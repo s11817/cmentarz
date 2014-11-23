@@ -1,11 +1,12 @@
 package Domain;
 
+import java.util.Date;
+
 public class Accommodation extends Person  {
 	
 	char sector;
 	int nrOfGrave;
-	int sinceWhen;
-	int forWhen;
+	Date forWhen;
 	
 	
 	private Person person;
@@ -25,21 +26,19 @@ public class Accommodation extends Person  {
 		return sector;
 	}
 
-	public int getSinceWhen() {
-		return sinceWhen;
-	}
+	
+	
 
-	public void setSinceWhen(int sinceWhen) {
-		this.sinceWhen = sinceWhen;
-	}
 
-	public int getForWhen() {
+	public Date getForWhen() {
 		return forWhen;
 	}
 
-	public void setForWhen(int forWhen) {
+
+	public void setForWhen(Date forWhen) {
 		this.forWhen = forWhen;
 	}
+
 
 	public void setSector(char string) {
 		this.sector = string;
