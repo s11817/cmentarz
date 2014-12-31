@@ -38,6 +38,24 @@ public class Main {
 				System.out.println("Imie i nazwisko :"+rs.getString("name")+" "+rs.getString("surName"));
 			}
 		
+			
+			String query2 = "SELECT * FROM accommodation";
+			Statement stmt2 = connection.createStatement();
+			ResultSet rs2 = stmt2.executeQuery(query2);
+			
+			while(rs2.next()){
+				System.out.println("ID = "+rs2.getInt("id")+" nr grobu:"+rs2.getInt("nrOfGrave")+", sector "+rs2.getString("sector"));
+			}
+			
+			
+			//select na pokazanie dzia³ania relacji pomiêdzy tabelami
+			String query3 = " SELECT * FROM person INNER JOIN accommodation ON(person.id = accommodation.idPerson)";
+			Statement stmt3 = connection.createStatement();
+			ResultSet rs3 = stmt3.executeQuery(query3);
+			while(rs3.next()){
+				System.out.println("Imie i nazwisko :"+rs3.getString("name")+" "+rs3.getString("surName")+"ID = "+rs3.getInt("id")+" nr grobu:"+rs3.getInt("nrOfGrave")+", sector "+rs3.getString("sector"));
+			}	
+			
 		
 		} catch (Exception e) {
 			System.err.println(e);
